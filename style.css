@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+*{
+    box-sizing: border-box;
+    font-weight: 1000;
+}
+.navbar-container
+{
+    display:flex;
+    background: #ECCCB2;
+mix-blend-mode: normal;
+    color:black;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 1000;
+    margin-top: 5px;
+    animation:nav-load 300ms ease-in;
+    
+
+}
+.logo
+{ 
+    
+    background-color:black;
+    width: 7rem;
+    height: inherit;
+    text-align: center;
+    color:white;
+    height:7rem;
+    
+
+}
+.logo span
+{  position: relative;
+    top:1rem;
+    height: 1.5rem;
+    border:2px solid white;
+    font-size: 1.5rem;
+
+}
+.drop-btn
+{
+    background: transparent;
+    border:none;
+    font-family: 'Kanit', sans-serif;
+    font-size:1rem;
+}
+.drop{
+    
+        float: left;
+        overflow: hidden;
+        
+      
+      
+
+}
+.drop-menu {
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border-top:3px solid #113f67; 
+    border-radius: 2px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+.drop-menu a
+{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.drop-menu a:hover {
+    background-color: #ddd;
+  }
+  
+.drop:hover .drop-menu {
+    display: block;
+  }
+
+.list-menu
+{
+    display:flex;
+    gap: 2rem;
+    list-style: none;
+    
+
+}
+.search-box
+{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+
+}
+.search
+{   
+    border: none;
+    background: transparent;
+    border-bottom: 0.5px solid rgb(31, 30, 30);
+    text-align: center;
+    outline: none;
+    font-family:'Kanit', sans-serif; 
+}
+.search:focus {
+   
+   outline: none;
+   font-weight: 50;
+   
+  }
+  .search::-webkit-input-placeholder {
+    font-weight: lighter;
+    color:#515253;
+}
+.search::-moz-placeholder {
+    font-weight: lighter;
+    color:#515253;
+}
+.search::-ms-input-placeholder {
+    font-weight: lighter;
+    color:#515253;
+}
+select
+{background: transparent;
+  text-decoration: none;
+
+}
+
+
+.search-icon
+{
+    background:transparent;
+    
+}
+.my-account
+{
+    display: flex;
+    align-items: center;
+}
+.cart
+{   display: flex;
+    justify-content: space-between;
+    margin: 80px;
+}
+.promotional
+{
+    background-image: url(images/plant-pr.jpg);
+    background-repeat: no-repeat;
+    margin:2rem;
+    background-size: cover;
+    height: 40rem;
+    width:90%;
+}
+
+.promotional-text
+{
+    position: relative;
+    height: 70%;
+    width:50%;
+    background-color: white;
+    margin:5rem;
+    top:5rem;
+    
+    
+    
+}
+#pr{
+    font-family:'Kanit', sans-serif;  
+    font-weight: 1000;
+    text-transform:uppercase;
+    animation-name:slow-appear;
+    animation-duration: 2s;
+    
+}
+.learn-more
+{   position:relative;
+    left:105px;
+    margin:2rem;
+    background-color: black;
+    color:white;
+    height: 4rem;
+    width:10rem;
+    font-family:'Kanit', sans-serif;   
+    font-weight: 1000;
+
+}
+.filter-buttons{
+    display:flex;
+    justify-content: center;
+    gap:4rem;
+    animation-name:slow-appear ;
+    animation-duration: 1s;
+    
+}
+.filter-btn
+{
+    border: none;
+    border-radius: 10px 2px;
+    background: #113f67; 
+    color:white;
+    height:2rem;
+    width:6rem;
+    box-shadow: 2px 2px 2px black;
+    transition: 0.3s ease-in;
+
+}
+.filter-btn:hover{
+    height: 2.2rem;
+    width:6.2rem;
+    
+}
+.products{
+    display:flex;
+    justify-content: center;
+    gap:5rem;
+    margin:70px;
+}
+.productimg img{
+
+    height:200px;
+    width:200px;
+}
+.productimg img:hover
+{   opacity: 50%;
+   
+}
+.instagram-sec{
+    background-image: url(images/ig-pic.jpg);
+    background-repeat: no-repeat;
+    margin:2rem;
+    background-size: cover;
+    height: 30rem;
+    width:50%;
+}
+.instagramsec-text
+{
+    position: relative;
+    height: 70%;
+    width:50%;
+    background: rgba(135, 132, 132, 0.5);
+    font-size: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    margin:5rem;
+    top:5rem;
+    
+    
+}
+
+footer{
+    height:15rem;
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    gap:5rem;
+    background: #e7eaf6; ;
+    color:black;
+    font-family:'Kanit', sans-serif;  
+    padding:2rem;
+}
+.f{
+    padding:2px;
+    display:grid;
+
+}
+.social-icons{
+    display:flex;
+    gap:1rem;
+
+}
+.social-icons img{
+    width:20px;
+    height: 20px;
+    
+}
+.social-icons img:hover
+{ width:22px;
+  height: 22px;
+
+}
+#preloader{
+    background: rgba(34, 33, 33, 0.5) url(images/loader.gif) no-repeat center center;
+    background-size:15%;
+    height:100%;
+    width:100%;
+    position:fixed;
+    z-index: 100;
+    margin: 0;
+
+
+}
+
+/*login css*/
+.login
+{
+    background-image: url(images/login-bg.jpg);
+    background-repeat: no-repeat;
+    margin:2rem;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+.login-div
+{   position: absolute;
+    font-family: Kanit, sans-serif; 
+    display:grid;
+    padding: 2rem;
+    top:5rem;
+    bottom:5rem;
+    height:80%;
+    width: 60%;
+    background-color: white;
+
+
+}
+.info{
+    position: relative;
+    gap:1rem;
+    display:grid;
+    grid-template-rows: auto auto;
+    float: left;
+    
+}
+.info input
+{  
+    width:60%;
+    
+}
+
+.info input:focus 
+{
+    outline: 2px solid yellow;
+    background-color: transparent;
+}
+.bottom
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+.bottom h3{
+    color:rgb(4, 95, 4);
+    
+}
+.login-btn button{
+    border:none;
+    background-color: #113f67; 
+    width:10rem;
+    height:4rem;
+    font-family: Kanit, sans-serif; 
+    font-size: 1rem;
+
+}
+
+
+/*login-css end/
+/*media-quries*/
+
+/*keyframes*/
+@keyframes slow-appear{
+    0%   {opacity: 10%;}
+  25%  {opacity:20%;}
+  50%  {opacity:50%;}
+  100% {opacity:100%;}
+}
+@keyframes nav-load{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
