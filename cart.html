@@ -17,6 +17,17 @@
                 <span> PLNT</span>
                </div>
             <!--menu-->
+            <div class="drop">
+            <button class="dropdown-icon drop-btn"><img src="images/dropdown-icon.png" width="50px" alt=""></button>
+
+            <div class="drop-menu" id="shrink">
+                <a href="index.html">home</a>
+                <a href="cart.html">About</a>
+                <a href="">contact</a>
+                <a href="">pages</a>
+                
+            </div>
+        </div>
             <div class="menu">
             <ul class="list-menu">
                 <a></a>home</a>
@@ -24,7 +35,7 @@
                 <button class="drop-btn">about
                     
                 </button>
-                <div class="drop-menu" >
+                <div class="drop-menu"  >
                     <a href="">login</a>
                     <a href="">cart</a>
                     <a href="">card</a>
@@ -48,7 +59,7 @@
                 </button>
                 <div class="drop-menu">
                     <a href="login.html">login</a>
-                    <a href="">cart</a>
+                    <a href="cart.html">cart</a>
                     <a href="">card</a>
                     
                 </div>
@@ -58,14 +69,15 @@
             <!--search box-->
                 <div class="search-box">
                     <input type="text" class="search" placeholder="search  items">
-                    <span class="search-icon"><img src="images/search_FILL0_wght100_GRAD0_opsz24.png" alt=""></span>
+                    <span class="search-icon"><img src="images/search_FILL0_wght100_GRAD0_opsz48.png" width="20px" alt=""></span>
                 </div>
                 <!--my account-->
                 <div class="my-account">my account</div>
                 <!--cart-->
-                <span class="cart"><img src="images/shopping_cart_checkout_FILL0_wght100_GRAD0_opsz24.png" alt=""></span>
+                <span class="cart"><img src="images/shopping_cart_checkout_FILL0_wght100_GRAD0_opsz24.png" width="40px" alt=""></span>
             
         </div>
+        
         <!--end of navbar-->
         <section class="cart-sec"> 
         <header class="cart-header">
@@ -75,29 +87,42 @@
             <h1>Total</h1>
         </header>
         <article class="cart-item"><img src="images/product.jpg" alt="" width="200px">
-        <div class="price">100$</div>
-        <div class="quantity">1
+        <p class="price">100</p>
+        <div class="quantity">
+            <p  class="qty">2</p>
             <span class="qty-btn">
-                <button class="plus-btn">+</button>
-                <button class="minus-btn">-</button>
+                <button class="cart-btn plus">+</button>
+                <button class="cart-btn minus">-</button>
             </span>
-           
-        </div>
-        <div class="total">100$</div></article>
+            <p class="total">200</p>
+        </div>    
+         
+        
+        
+    </article>
         <article class="cart-item"><img src="images/product.jpg" alt="" width="200px">
-            <div class="price">100$</div>
-            <div class="quantity">1
+            <p class="price">100</p>
+            <div class="quantity">
+                <p class="qty">1</p>
+                   
+        
                 <span class="qty-btn">
-                    <button class="plus-btn">+</button>
-                    <button class="minus-btn">-</button>
+                    <button class="cart-btn plus" >+</button>
+                    <button class="cart-btn minus"  >-</button>
                 </span>
+                <p class="total">100</p>
+            </div>
+                
+            </article>
+               
             </div>
            
-            <div class="total">100$</div></article>
-    
+            
+        
+            <div class="checkout-btn"><button class="btn">checkout</button></div>    
 
     </section>
-    <div class="checkout-btn"><button class="btn">checkout</button></div>
+    
        
             
             
