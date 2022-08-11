@@ -39,24 +39,35 @@ mix-blend-mode: normal;
     font-size: 1.5rem;
 
 }
+.dropdown-icon
+{
+    display: none;
+}
 .drop-btn
 {
     background: transparent;
     border:none;
     font-family: 'Kanit', sans-serif;
     font-size:1rem;
+    cursor: pointer;
 }
 .drop{
     
         float: left;
         overflow: hidden;
         
+        
       
       
 
 }
+#shrink
+{
+    background-color: rgb(204, 187, 187);
+    color:white;
+}
 .drop-menu {
-    margin-top: 10px;
+    margin-top: 5px;
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -96,6 +107,7 @@ mix-blend-mode: normal;
     display: flex;
     align-items: center;
     gap:2rem;
+    margin: 5px;
 
 }
 .search
@@ -177,7 +189,7 @@ select
     animation-duration: 2s;
     
 }
-.learn-more
+.btn
 {   position:relative;
     left:105px;
     margin:2rem;
@@ -228,6 +240,10 @@ select
 .productimg img:hover
 {   opacity: 50%;
    
+}
+.price
+{
+    padding: 1rem;
 }
 .instagram-sec{
     background-image: url(images/ig-pic.jpg);
@@ -292,6 +308,14 @@ footer{
     margin: 0;
 
 
+}
+@media (max-width:900px){
+   .menu{
+    display: none;
+   }
+   .dropdown-icon{
+    display: flex;
+   }
 }
 
 /*login css*/
@@ -359,6 +383,78 @@ footer{
 
 
 /*login-css end/
+/*cart-css start*/
+.cart-header{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    font-family: Kanit, sans-serif; 
+    padding:1rem;
+    margin:0.5rem;
+    
+}
+.cart-header h1{
+    font-size: 1.5rem;
+    padding:1rem;
+
+   
+}
+.cart-sec{
+    margin:5rem;
+}
+.cart-item{
+   display:grid;
+    grid-template-columns: auto auto auto auto;
+    font-family: Kanit, sans-serif; 
+    gap:rem;
+    font-size: 1.5rem;
+    
+    border-bottom: 1px solid black;
+    padding:1rem;
+    
+}
+.cart-item :nth-child()
+{
+    border-top: 1px  solid black;
+}
+.qty-btn
+{
+    display:grid;
+    grid-template-rows: auto auto;
+    gap:1rem;
+    width:40px;
+    height: 40px;
+   
+}
+.cart-btn{
+    background-color:#ECCCB2 ;
+    border:1px solid black;
+    transition: 00.1s ease-in;
+}
+.cart-btn:active{
+    background-color:#e7a167 ;
+}
+
+.quantity 
+{   position: relative;
+    left: 100px;
+    display: flex;
+    gap:2rem;
+}
+.total
+{
+    position: relative;
+    left: 335px;
+    display: flex;
+    gap:2rem;  
+}
+.checkout-btn
+{
+    position :relative;
+    top:10px;
+    left:0;
+}
+/*cart-css end/
 /*media-quries*/
 
 /*keyframes*/
